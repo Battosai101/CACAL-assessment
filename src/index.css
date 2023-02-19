@@ -1,65 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-/*
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}*/
-@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=Outfit:wght@100;400;500&display=swap");
+@import url("https://fonts.cdnfonts.com/css/avenir-lt-std");
 
 *{
   padding: 0;
   margin: 0;
-}
-/*
-nav {
-  //padding: 20px 32px;
-  background-color: aliceblue;
-  display: flex;
-  justify-content: space-between;
-}*/
-
-ul {
-  display: flex;
-}
-
-nav a {
-  margin-top: 16px;
-  margin-right: 16px;
-}
-
-nav a.active {
-  font-weight: bold;
-  color: red;
-}
-
-.nav--logo {
-  font-weight: 700;
-  font-family: Outfit;
-  font-size: 24px;
-  width: 135px;
-  height: 30px;
-  top: 75px;
-  left: 90px;
-}
-
-.nav {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px 90px;
-  color: white;
 }
 
 .hero {
@@ -74,98 +22,5 @@ nav a.active {
   background-color: #1A1A1A;
   height: 100vh;
 }
-
-/*
-@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Raleway:wght@300;400&display=swap');
-
-*{
-  margin:0;
-  color: white;
-}
-
-.component1 {
-  padding: 50px 100px 50px 100px;
-  background-image:url("./hero.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 120vh;
-}
-.navbar{
-  display: flex;
-  justify-content: space-between;
-}
-.nav-links{
-  display: flex;
-  justify-self: flex-end;
-  list-style: none;
-  align-items: center;
-}
-.nav-links > li {
-  font-family: "Raleway";
-  margin: 20px;
-}
-.component2 {
-  background-color: 
-  #1A1A1A;
-  height: 100vh;
-}
-.logodiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.component1--logo{
-  width: 135px;
-  height: 30px;
-  left: 90px;
-  top: 75px;
-  font-family: 'Outfit';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-  color: #FFFFFF;
-}
-
-.btn-nav{
-  padding: 15px 30px 15px 30px;
-  min-width: 100px;
- 
- font-family: "Raleway";
- font-weight: bold;
- font-size: 15px;
- border-radius: 10px;
-}
-.btn-nav1{
-  background-color: rgba(12,12,12,0) !important;
-  color: white;
-  border: solid rgb(255, 255, 255) 1px !important;
-}
-.btn-nav2{
-  background-color: #106580 !important;
-  color: rgb(255, 255, 255);
-  border: none !important;
-}
-.hero{
-  width: 100%;
-  height: 90vh;
-  border: solid red 1px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-family: "Raleway";
-}
-.hero-child{
-  width: 50%;
-}
-.hero-child > h1 {
-  font-size: 80px;
-  font-weight: bolder;
-}
-.shader{
-  background-color: black;
-  width: 100%;
-  height: 100%;
-}*/
 
 
