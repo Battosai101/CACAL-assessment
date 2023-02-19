@@ -8,14 +8,14 @@ import {NavLink} from 'react-router-dom'
 export default function HeroInfo(){
     return(
         <div className="absolute top-[345px] text-white pl-[84px] pr-[90px] bottom-0 w-full">
-            <h1 className="font-[Outfit] font-bold text-[80px]">Kimetsu no Yaiba</h1>
-            <div className="flex items-center">
+            <h1 className="font-[Outfit] font-bold text-[80px] max-w-[622px]">Kimetsu no Yaiba</h1>
+            <div className="flex items-center max-w-[622px]">
                 <img src={star} alt="star icon"/>
                 <p className='font-[Outfit] pl-1 pr-5 text-xs font-semibold'>5.0</p>
                 <p className='font-[Outfit] text-xs font-normal'>Category: Adventure fiction, Dark fantasy, Martial Arts</p>
             </div>
             <div className='mt-6 font-[Outfit] text-base'>
-                <p className='w-[622px] font-normal'>Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. 
+                <p className='max-w-[622px] font-normal'>Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. 
                     It follows teenage Tanjiro Kamado, who strives to became a demon slayer after his family was slaughtered and 
                     his younger sister Nezuko turned into a demon.</p>
             </div>
