@@ -7,8 +7,8 @@ export default function Navbar(){
                 <NavLink to='/'><button className='mr-4'>Home</button></NavLink>
                 <NavLink to='/discover'><button className='mr-4'>Discover</button></NavLink>
                 <NavLink to='/aboutus'><button className='mr-4'>About Us</button></NavLink>
-                <NavLink to='/signup'><button className='mr-4 rounded-md border-white px-6 py-2'>Sign Up</button></NavLink>
-                <NavLink to='/login'><button className='bg-red-600 px-6 py-2 rounded-md cursor-pointer mr-4'>Log In</button></NavLink>
+                <NavLink to='/signup'><button className='mr-4 rounded-md border-[1px] border-white px-6 py-2'>Sign Up</button></NavLink>
+                <NavLink to='/login'><button className='bg-[#106580] px-6 py-2 rounded-md cursor-pointer mr-4'>Log In</button></NavLink>
             </div>
         </div>
     )
