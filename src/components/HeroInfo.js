@@ -5,8 +5,8 @@ import line from '../line.png'
 import circle from '../circle.png'
 export default function HeroInfo(){
     return(
-        <div className="absolute top-[250px] border-2 border-red-200 text-white pl-[84px] bottom-0">
-            <h1 className="font-[Outfit] font-bold text-[80px] items-center w-fit">Kimetsu no Yaiba</h1>
+        <div className="absolute top-[345px] border-2 border-red-200 text-white pl-[84px] bottom-0">
+            <h1 className="font-[Outfit] font-bold text-[80px]">Kimetsu no Yaiba</h1>
             <div className="flex items-center">
                 <img src={star} />
                 <p className='font-[Outfit] pl-1 pr-5 text-xs font-semibold'>5.0</p>
