@@ -7,7 +7,7 @@ import {NavLink} from 'react-router-dom'
 
 export default function HeroInfo(){
     return(
-        <div className="absolute top-[345px] text-white pl-[84px] pr-[90px] bottom-0 w-full">
+        <div className="absolute top-[345px] text-white pl-[84px] pr-[90px] bottom-0 w-full z-40">
             <h1 className="font-[Outfit] font-bold text-[80px] max-w-[622px]">Kimetsu no Yaiba</h1>
             <div className="flex items-center max-w-[622px]">
                 <img src={star} alt="star icon"/>
