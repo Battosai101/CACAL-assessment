@@ -28,17 +28,17 @@ export default function HeroInfo(){
             <div className='mt-60 text-white flex items-center justify-between'>
                 <div className='flex justify-start font-[Outfit] text-sm space-x-7'>
                     <NavLink to='/'>
-                        <p className='font-bold border-b-4 border-[#106580] border-solid rounded-sm'>
+                        <p className='font-thin hover:font-bold hover:border-b-4 hover:border-[#106580] hover:border-solid hover:rounded-sm'>
                             Overview
                         </p>
                     </NavLink>
                     <NavLink to='/'>
-                        <p className='font-thin'>
+                        <p className='font-thin hover:font-bold hover:border-b-4 hover:border-[#106580] hover:border-solid hover:rounded-sm'>
                             Episodes
                         </p>
                     </NavLink>
                     <NavLink to='/'>
-                        <p className='font-thin'>
+                        <p className='font-thin hover:font-bold hover:border-b-4 hover:border-[#106580] hover:border-solid hover:rounded-sm'>
                             Details
                         </p>
                     </NavLink>

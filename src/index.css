@@ -13,3 +13,12 @@
 .hero{
   background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.5)),url('./hero.jpeg');
 }
+
+.scrollbar-hide{
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+
+.scrollbar-hide::-webkit-scrollbar{
+  display: none;
+}
