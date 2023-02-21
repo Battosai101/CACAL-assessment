@@ -2,9 +2,11 @@ import {NavLink} from 'react-router-dom'
 export default function Navbar(){
     return(
         <nav className='absolute flex items-center justify-between z-10 w-full px-[90px] text-white flex-wrap'>
-            <h1 className='font-[Outfit] text-2xl font-bold items-center pt-[75px]'>
-                AnimeBinge
-            </h1>
+            <NavLink to='/'>
+                <h1 className='font-[Outfit] text-2xl font-bold items-center pt-[75px]'>
+                    AnimeBinge
+                </h1>
+            </NavLink>
             <div className='font-[Montserrat] text-white font-normal text-base items-center pt-[81px] '>
                 <NavLink to='/'>
                     <button className='mr-[53px]'>
