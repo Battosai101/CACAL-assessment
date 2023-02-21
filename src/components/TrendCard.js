@@ -1,7 +1,9 @@
 import star from '../star.png'
+import {NavLink} from 'react-router-dom'
 
 export default function TrendCard(props){
     return(
+        <NavLink to='/animedetails'>
            <button className='relative w-[516px] h-[291px] shrink-0 rounded-[21px] overflow-hidden snap-start hover:shadow-[0_4px_12px_-1px_rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out'>
                 <img src={`../TrendPoster/${props.poster}`} alt={props.alt} className='w-full h-full'/>
                 <div className='absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-black'></div>
@@ -22,6 +24,7 @@ export default function TrendCard(props){
                     </div>
                 </div>
            </button>
+        </NavLink>
     )
 }
 

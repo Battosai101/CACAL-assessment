@@ -5,6 +5,8 @@ import AboutUs from './components/AboutUs'
 import SignUp from './components/SignUp'
 import LogIn from './components/LogIn'
 import Navbar from './components/Navbar'
+import AnimeDetails from './components/AnimeDetails'
+
 export default function App() {
   return (
     <>
@@ -15,6 +17,7 @@ export default function App() {
       <Route path='aboutus' element={<AboutUs />} />
       <Route path='signup' element={<SignUp />} />
       <Route path='login' element={<LogIn />} />
+      <Route path='animedetails' element={<AnimeDetails />} />
     </Routes>
     </>
   )
