@@ -7,7 +7,7 @@ export default function Episode(){
             <h1 className='border-2 border-blue-500 text-white font-bold text-[34px] leading-[43px] mt-14 pl-[89px]'>
                 Trending <span className='text-[#FBC94A]'>this week</span>
             </h1>
-            <div className='text-white flex items-center mt-[26px] px-[90px] space-x-4 overflow-auto scrollbar-hide scroll-smooth scroll-pl-[90px] snap-x'>
+            <div className='text-white flex items-center mt-[26px] px-[90px] space-x-4 py-2 overflow-auto scrollbar-hide scroll-smooth scroll-pl-[90px] snap-x'>
                 <TrendCard />
                 <TrendCard />
                 <TrendCard />

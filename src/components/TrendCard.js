@@ -2,7 +2,7 @@ import aot from '../aot.png'
 import star from '../star.png'
 export default function TrendCard(){
     return(
-           <button className='relative w-[516px] h-[291px] shrink-0 rounded-[21px] overflow-hidden snap-start hover:shadow-[0_0_0_6px_rgba(196,196,196,0.42)] hover:duration-300 hover:ease-out'>
+           <button className='relative w-[516px] h-[291px] shrink-0 rounded-[21px] overflow-hidden snap-start hover:shadow-md hover:shadow-[rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out'>
                 <img src={aot} alt="AoT" className='w-full h-full'/>
                 <div className='absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-black'></div>
                 <div className='absolute w-full flex flex-col pl-[33px] top-[223px] bottom-5 text-white'>
