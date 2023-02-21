@@ -5,19 +5,17 @@ import line from '../line.png'
 import circle from '../circle.png'
 import {NavLink} from 'react-router-dom'
 
-export default function HeroInfo(){
+export default function HeroInfo(props){
     return(
         <div className="absolute top-[345px] text-white pl-[84px] pr-[90px] bottom-0 w-full z-20 overflow-hidden">
-            <h1 className="font-[Outfit] font-bold text-[80px] max-w-[622px]">Kimetsu no Yaiba</h1>
+            <h1 className="font-[Outfit] font-bold text-[80px] max-w-[622px]">{props.title}</h1>
             <div className="flex items-center max-w-[622px]">
                 <img src={star} alt="star icon"/>
-                <p className='font-[Outfit] pl-1 pr-5 text-xs font-semibold'>5.0</p>
-                <p className='font-[Outfit] text-xs font-normal'>Category: Adventure fiction, Dark fantasy, Martial Arts</p>
+                <p className='font-[Outfit] pl-1 pr-5 text-xs font-semibold'>{props.rate}</p>
+                <p className='font-[Outfit] text-xs font-normal'>Category: {props.category}</p>
             </div>
             <div className='mt-6 font-[Outfit] text-base'>
-                <p className='max-w-[622px] font-normal'>Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. 
-                    It follows teenage Tanjiro Kamado, who strives to became a demon slayer after his family was slaughtered and 
-                    his younger sister Nezuko turned into a demon.</p>
+                <p className='max-w-[622px] font-normal'>{props.desc}</p>
             </div>
             <div className="flex items-center mt-3">
                 <button className="bg-[#106580] rounded-md flex items-center font-normal py-3 px-2.5 mr-4">
@@ -28,17 +26,17 @@ export default function HeroInfo(){
             <div className='mt-60 text-white flex items-center justify-between'>
                 <div className='flex justify-start font-[Outfit] text-sm space-x-7'>
                     <NavLink to='/'>
-                        <p className='font-thin hover:font-bold hover:border-b-4 hover:border-[#106580] hover:border-solid hover:rounded-sm'>
+                        <p className='font-thin hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                             Overview
                         </p>
                     </NavLink>
                     <NavLink to='/'>
-                        <p className='font-thin hover:font-bold hover:border-b-4 hover:border-[#106580] hover:border-solid hover:rounded-sm'>
+                        <p className='font-thin hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                             Episodes
                         </p>
                     </NavLink>
                     <NavLink to='/'>
-                        <p className='font-thin hover:font-bold hover:border-b-4 hover:border-[#106580] hover:border-solid hover:rounded-sm'>
+                        <p className='font-thin hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                             Details
                         </p>
                     </NavLink>

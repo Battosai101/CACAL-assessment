@@ -1,5 +1,6 @@
 import aot from '../aot.png'
 import star from '../star.png'
+
 export default function TrendCard(){
     return(
            <button className='relative w-[516px] h-[291px] shrink-0 rounded-[21px] overflow-hidden snap-start hover:shadow-[0_4px_12px_-1px_rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out'>
