@@ -35,7 +35,7 @@ export default function Episode(){
             <h1 className=' text-white font-bold text-[34px] leading-[43px] mt-14 pl-[89px]'>
                 Throwback Anime!
             </h1>
-            <div className='mt-9 pb-14 flex items-center px-[90px] space-x-5 overflow-auto'>
+            <div className='mt-9 pb-14 flex items-center px-[90px] space-x-5 overflow-auto scrollbar-hide scroll-smooth scroll-pl-[90px] snap-x'>
                 {throwback}
             </div>
         </div>
