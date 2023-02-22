@@ -16,7 +16,7 @@ export default function Episode(){
                 />
     })
 
-    const throwback= ThrowData.map(item =>{
+    const throwback= ThrowData.map(item => {
         return <ThrowCard 
                 key={item.id}
                 poster={item.poster}
@@ -35,7 +35,7 @@ export default function Episode(){
             <h1 className=' text-white font-bold text-[34px] leading-[43px] mt-14 pl-[89px]'>
                 Throwback Anime!
             </h1>
-            <div className='mt-9 pb-14 flex items-center px-[90px] space-x-4 overflow-auto'>
+            <div className='mt-9 pb-14 flex items-center px-[90px] space-x-5 overflow-auto'>
                 {throwback}
             </div>
         </div>
