@@ -21,7 +21,7 @@ export default function HeroInfo(props){
                 <button className="bg-[#106580] rounded-md flex items-center font-normal py-3 px-2.5 mr-4">
                     <span className='mr-2 pl-2.5'><img src={play} alt="playbutton icon" /></span>Watch Now!
                 </button>
-                <button className='border-[1px] border-white rounded-md'><img className='p-3'src={heart} alt="heart icon" /></button>
+                <button className='border-[1px] border-white rounded-md'><img className='p-3 hover:bg-[#106580]'src={heart} alt="heart icon" /></button>
             </div>
             <div className='mt-60 text-white flex items-center justify-between'>
                 <div className='flex justify-start font-[Outfit] text-sm space-x-7'>

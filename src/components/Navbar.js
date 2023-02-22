@@ -9,27 +9,27 @@ export default function Navbar(){
             </NavLink>
             <div className='font-[Montserrat] text-white font-normal text-base items-center pt-[81px] '>
                 <NavLink to='/'>
-                    <button className='mr-[53px]'>
+                    <button className='mr-[53px] hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                         Home
                     </button>
                 </NavLink>
                 <NavLink to='/discover'>
-                    <button className='mr-[58px]'>
+                    <button className='mr-[58px] hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                         Discover
                     </button>
                 </NavLink>
                 <NavLink to='/aboutus'>
-                    <button className='mr-[49px]'>
+                    <button className='mr-[49px] hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                         About Us
                     </button>
                 </NavLink>
                 <NavLink to='/signup'>
-                    <button className='mr-[21px] px-7 py-3 border-[1px] border-white rounded-md'>
+                    <button className='mr-[21px] px-7 py-3 border-[1px] border-white rounded-md hover:bg-[#106580]'>
                         Sign Up
                     </button>
                 </NavLink>
                 <NavLink to='/login'>
-                    <button className='px-8 py-3 rounded-md bg-[#106580]'>
+                    <button className='px-8 py-3 rounded-md bg-[#106580] hover:bg-white hover:text-[#106580]'>
                         Log In
                     </button>
                 </NavLink>
