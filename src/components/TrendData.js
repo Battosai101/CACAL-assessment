@@ -23,5 +23,21 @@ export default [
         title: "One Piece",
         rate: "4.9",
         category: "Adventure fiction, Comedy, Family"
+    },
+    {
+        id: 4,
+        poster: "bluelock.jpg",
+        alt: "Blue Lock",
+        title: "Blue Lock",
+        rate: "5.0",
+        category: "Sports, Action"
+    },
+    {
+        id: 5,
+        poster: "tokyoghoul.jpg",
+        alt: "Tokyo Ghoul",
+        title: "Tokyo Ghoul",
+        rate: "4.5",
+        category: "Action, Gore, Psychological"
     }
 ]
