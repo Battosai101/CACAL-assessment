@@ -1,7 +1,7 @@
 import TrendCard from './TrendCard'
 import ThrowCard from './ThrowCard'
-import TrendData from './TrendData'
-import ThrowData from './ThrowData'
+import TrendData from '../data/TrendData'
+import ThrowData from '../data/ThrowData'
 
 export default function Episode(){
 

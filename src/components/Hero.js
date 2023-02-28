@@ -1,5 +1,5 @@
 import HeroInfo from './HeroInfo'
-import HeroData from './HeroData'
+import HeroData from '../data/HeroData'
 export default function Hero(){
     const data = HeroData.map(item => {
         return <HeroInfo 

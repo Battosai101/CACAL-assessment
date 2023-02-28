@@ -1,5 +1,5 @@
-import Hero from './Hero'
-import Episode from './Episode'
+import Hero from '../components/Hero'
+import Episode from '../components/Episode'
 export default function Home(){
     return(
         <>

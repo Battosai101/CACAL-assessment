@@ -1,4 +1,4 @@
-import star from '../star.png'
+import star from '../icons/star.png'
 import {NavLink} from 'react-router-dom'
 
 export default function TrendCard(props){

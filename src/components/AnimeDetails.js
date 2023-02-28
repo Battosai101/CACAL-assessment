@@ -1,7 +1,7 @@
-import star from '../star.png'
+import star from '../icons/star.png'
 import {NavLink} from 'react-router-dom'
 import AnimeEpisode from './AnimeEpisode'
-import AnimeEpisodeData from './AnimeEpisodeData'
+import AnimeEpisodeData from '../data/AnimeEpisodeData'
 export default function AnimeDetails(){
     const episodes = AnimeEpisodeData.map(ep => {
         return <AnimeEpisode 

@@ -1,8 +1,8 @@
-import heart from '../heart.png'
-import star from '../star.png'
-import play from '../play.png'
-import line from '../line.png'
-import circle from '../circle.png'
+import heart from '../icons/heart.png'
+import star from '../icons/star.png'
+import play from '../icons/play.png'
+import line from '../icons/line.png'
+import circle from '../icons/circle.png'
 import {NavLink} from 'react-router-dom'
 
 export default function HeroInfo(props){

@@ -11,7 +11,7 @@
 }
 
 .hero{
-  background-image: url('./hero.jpeg');
+  background-image: url('../public/HeroBackground/hero.jpeg');
 }
 
 .scrollbar-hide{
