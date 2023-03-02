@@ -33,7 +33,7 @@ export default function AnimeDetails(){
                 <div className='flex flex-col ml-[90px]'>
                     <div className='relative mb-[17px]'>
                     <div className='absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[21px]'></div>
-                        <img src='../zoom.png' alt='zoom aot' className='w-[516px] h-[621px]'/>
+                        <img src={`../TrendPoster/${trend.poster}`} alt='zoom aot' className='w-full h-[621px] object-cover object-center rounded-[21px]'/>
                         <div className='flex flex-col absolute bottom-10 mt-[533px] pl-[33px] w-full'>
                             <h1 className='font-[Outfit] font-medium text-2xl text-white'>
                                 {trend.title}
