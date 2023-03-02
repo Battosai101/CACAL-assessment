@@ -3,7 +3,7 @@ export default function Navbar(){
     return(
         <nav className='absolute flex items-center justify-between z-10 w-full px-[90px] text-white flex-wrap'>
             <NavLink to='/'>
-                <h1 className='font-[Outfit] text-2xl font-bold items-center pt-[75px]'>
+                <h1 className='font-[Outfit] text-2xl font-bold items-center pt-[75px] hover:text-[#106580]'>
                     AnimeBinge
                 </h1>
             </NavLink>
