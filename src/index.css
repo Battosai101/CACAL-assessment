@@ -3,7 +3,6 @@
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&family=Outfit:wght@100;400;500&display=swap");
-@import url("https://fonts.cdnfonts.com/css/avenir-lt-std");
 
 *{
   padding: 0;
