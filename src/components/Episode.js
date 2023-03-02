@@ -4,10 +4,10 @@ import TrendData from '../data/TrendData'
 import ThrowData from '../data/ThrowData'
 
 export default function Episode(){
-
     const trend = TrendData.map(item => {
         return <TrendCard 
                 key={item.id}
+                id={item.id}
                 poster={item.poster}
                 alt={item.alt}
                 title={item.title}
@@ -16,9 +16,10 @@ export default function Episode(){
                 />
     })
 
-    const throwback= ThrowData.map(item => {
+    const throwback = ThrowData.map(item => {
         return <ThrowCard 
                 key={item.id}
+                id={item.id}
                 poster={item.poster}
                 alt={item.alt}
                 />

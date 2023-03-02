@@ -17,7 +17,7 @@ export default function App() {
       <Route path='aboutus' element={<AboutUs />} />
       <Route path='signup' element={<SignUp />} />
       <Route path='login' element={<LogIn />} />
-      <Route path='animedetails' element={<AnimeDetails />} />
+      <Route path='animedetails/:title' element={<AnimeDetails />} /> 
     </Routes>
     </>
   )
