@@ -44,7 +44,7 @@ export default function Episode(){
                 <motion.h1 initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5, duration:0.5}} className='text-white font-bold text-[34px] leading-[43px] mt-14 ml-[89px]'>
                     Trending <span className='text-[#FBC94A]'>this week</span>
                 </motion.h1>
-                <input type="search" placeholder="Search..." className='self-end mr-[90px] rounded-lg px-3 py-1' onChange={(e) => setTrendValue(e.target.value)} />
+                <input type="search" placeholder="Search..." className='self-end mr-[90px] rounded-lg px-3 py-1 bg-[#106580] text-[#FBC94A]' onChange={(e) => setTrendValue(e.target.value)} />
             </div>
             <div className='text-white flex items-center mt-[26px] px-[90px] space-x-4 py-2 overflow-auto scrollbar-hide scroll-smooth'>
                 {trend}
@@ -53,7 +53,7 @@ export default function Episode(){
                 <motion.h1 initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5, duration:0.5}} className=' text-white font-bold text-[34px] leading-[43px] mt-14 ml-[89px]'>
                     Throwback Anime!
                 </motion.h1>
-                <input type="search" placeholder="Search..." className='self-end mr-[90px] rounded-lg px-3 py-1' onChange={(e) => setThrowValue(e.target.value)} />
+                <input type="search" placeholder="Search..." className='self-end mr-[90px] rounded-lg px-3 py-1 bg-[#FBC94A] text-[#106580]' onChange={(e) => setThrowValue(e.target.value)} />
             </div>
             <div className='mt-9 pb-14 flex items-center px-[90px] space-x-5 overflow-auto scrollbar-hide scroll-smooth'>
                 {throwback}
