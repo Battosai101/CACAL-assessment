@@ -1,11 +1,12 @@
 import {NavLink} from 'react-router-dom'
+import {motion} from 'framer-motion'
 export default function Navbar(){
     return(
-        <nav className='absolute flex items-center justify-between z-10 w-full px-[90px] text-white flex-wrap'>
+        <motion.nav initial={{opacity:0}} animate={{opacity:1}} transition={{delay:1, duration:1.5}} className='absolute flex items-center justify-between z-10 w-full px-[90px] text-white flex-wrap'>
             <NavLink to='/'>
-                <h1 className='font-[Outfit] text-2xl font-bold items-center pt-[75px] hover:text-[#106580]'>
+                <motion.h1 whileHover={{scale:1.2}} className='font-[Outfit] text-2xl font-bold items-center pt-[75px] hover:text-[#106580]'>
                     AnimeBinge
-                </h1>
+                </motion.h1>
             </NavLink>
             <div className='font-[Montserrat] text-white font-normal text-base items-center pt-[81px] '>
                 <NavLink to='/'>
@@ -34,6 +35,6 @@ export default function Navbar(){
                     </button>
                 </NavLink>
             </div>
-        </nav>
+        </motion.nav>
     )
 }

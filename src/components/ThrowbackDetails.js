@@ -2,16 +2,16 @@ import star from '../icons/star.png'
 import {NavLink,useParams} from 'react-router-dom'
 import AnimeEpisode from './AnimeEpisode'
 import AnimeEpisodeData from '../data/AnimeEpisodeData'
-import TrendData from '../data/TrendData'
+import ThrowData from '../data/ThrowData'
 import {useEffect,useState} from 'react'
 import slugify from 'react-slugify'
 import {motion} from 'framer-motion'
 
-export default function AnimeDetails(){
+export default function ThrowbackDetails(){
     const {title} = useParams();
-    const [trend, setTrend] = useState([]);
+    const [throwback, setThrowback] = useState([]);
     useEffect(() => {
-        setTrend(TrendData.find((data) => slugify(data.title) === title))
+        setThrowback(ThrowData.find((data) => slugify(data.title) === title))
     },[title])
 
     const episodes = AnimeEpisodeData.map(ep => {
@@ -27,26 +27,26 @@ export default function AnimeDetails(){
             <div className='relative font-[Outfit] w-full bg-[#1A1A1A]'>
             <NavLink to='/'>
                 <motion.button whileHover={{scale:0.9}} className='text-white font-bold text-[34px] leading-[43px] pt-56 pl-[89px] mb-[26px]'>
-                    Trending <span className='text-[#FBC94A]'>this week</span>
+                    Throwback Anime!
                 </motion.button>
             </NavLink>
             <div className='relative flex items-start space-x-4'>
                 <div className='flex flex-col ml-[90px]'>
                     <div className='relative mb-[17px]'>
                     <div className='absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[21px]'></div>
-                        <img src={`../TrendPoster/${trend.poster}`} alt='zoom aot' className='w-full h-[621px] object-cover object-center rounded-[21px]'/>
+                        <img src={`../ThrowPoster/${throwback.poster}`} alt='zoom aot' className='w-full h-[621px] object-cover object-center rounded-[21px]'/>
                         <div className='flex flex-col absolute bottom-10 mt-[533px] pl-[33px] w-full'>
                             <h1 className='font-[Outfit] font-medium text-2xl text-white'>
-                                {trend.title}
+                                {throwback.title}
                             </h1>
                             <div className='flex items-center justify-between'>
                                 <p className='font-[Outfit] font-normal text-xs text-[#747474]'>
-                                    Category: {trend.category}
+                                    Category: {throwback.category}
                                 </p>
                                 <div className='flex items-center mr-8'>
                                     <img src={star} alt='star icon' className='w-[19.97px] h-[18.99px] mr-1' />
                                     <p className='font-[Outfit] font-medium text-xs text-white'>
-                                        {trend.rate}
+                                        {throwback.rate}
                                     </p>
                                 </div>
                             </div>

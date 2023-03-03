@@ -1,13 +1,14 @@
 import star from '../icons/star.png'
-import {NavLink,useParams} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 import slugify from 'react-slugify'
+import {motion} from 'framer-motion'
 
 export default function TrendCard(props){
 
     return(
         <>
         <NavLink to={`/animedetails/${slugify(props.title)}`}>
-           <button className='relative w-[516px] h-[291px] shrink-0 rounded-[21px] overflow-hidden snap-start hover:shadow-[0_4px_12px_-1px_rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out'>
+           <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}} whileHover={{scale: 0.9}} className='relative w-[516px] h-[291px] shrink-0 rounded-[21px] overflow-hidden hover:shadow-[0_4px_12px_-1px_rgba(196,196,196,0.4)] hover:duration-300 hover:ease-out'>
                 <img src={`../TrendPoster/${props.poster}`} alt={props.alt} className='w-full h-full'/>
                 <div className='absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-black'></div>
                 <div className='absolute w-full flex flex-col pl-[33px] top-[223px] bottom-5 text-white'>
@@ -26,7 +27,7 @@ export default function TrendCard(props){
                         </div>
                     </div>
                 </div>
-           </button>
+           </motion.button>
         </NavLink>
         </>
     )

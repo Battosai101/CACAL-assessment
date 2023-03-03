@@ -4,10 +4,11 @@ import play from '../icons/play.png'
 import line from '../icons/line.png'
 import circle from '../icons/circle.png'
 import {NavLink} from 'react-router-dom'
+import {motion} from 'framer-motion'
 
 export default function HeroInfo(props){
     return(
-        <div className="absolute top-[345px] text-white pl-[84px] pr-[90px] bottom-0 w-full z-20 overflow-hidden">
+        <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5, duration:0.5}} className="absolute top-[345px] text-white pl-[84px] pr-[90px] bottom-0 w-full z-20 overflow-hidden">
             <h1 className="font-[Outfit] font-bold text-[80px] max-w-[622px]">{props.title}</h1>
             <div className="flex items-center max-w-[622px]">
                 <img src={star} alt="star icon"/>
@@ -18,10 +19,11 @@ export default function HeroInfo(props){
                 <p className='max-w-[622px] font-normal'>{props.desc}</p>
             </div>
             <div className="flex items-center mt-3">
-                <button className="bg-[#106580] rounded-md flex items-center font-normal py-3 px-2.5 mr-4">
+                <motion.button whileHover={{scale:1.1}} className="bg-[#106580] rounded-md flex items-center font-normal py-3 px-2.5 mr-4">
                     <span className='mr-2 pl-2.5'><img src={play} alt="playbutton icon" /></span>Watch Now!
-                </button>
-                <button className='border-[1px] border-white rounded-md'><img className='p-3 hover:bg-[#106580]'src={heart} alt="heart icon" /></button>
+                </motion.button>
+                <motion.button whileHover={{scale:0.9}} className='border-[1px] border-white rounded-md'><img className='p-3 hover:bg-[#106580]'src={heart} alt="heart icon" />
+                </motion.button>
             </div>
             <div className='mt-60 text-white flex items-center justify-between'>
                 <div className='flex justify-start font-[Outfit] text-sm space-x-7'>
@@ -48,6 +50,6 @@ export default function HeroInfo(props){
                     <img src={circle} alt="circle" />
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
