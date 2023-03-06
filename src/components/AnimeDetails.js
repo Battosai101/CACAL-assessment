@@ -6,6 +6,7 @@ import TrendData from '../data/TrendData'
 import {useEffect,useState} from 'react'
 import slugify from 'react-slugify'
 import {motion} from 'framer-motion'
+import Hero from './Hero'
 
 export default function AnimeDetails(){
     const {title} = useParams();
@@ -24,13 +25,15 @@ export default function AnimeDetails(){
     })
     
     return(
-            <div className='relative font-[Outfit] w-full bg-[#1A1A1A]'>
-            <NavLink to='/'>
-                <motion.button whileHover={{scale:0.9}} className='text-white font-bold text-[34px] leading-[43px] pt-56 pl-[89px] mb-[26px]'>
+        <>
+        <Hero />
+        <div className='relative font-[Outfit] w-full bg-[#1A1A1A]'>
+            <NavLink to='/' className='inline-block mt-14 ml-[89px] mb-[26px]'>
+                <motion.button whileHover={{scale:0.9}} className='text-white font-bold text-[34px] leading-[43px]'>
                     Trending <span className='text-[#FBC94A]'>this week</span>
                 </motion.button>
             </NavLink>
-            <div className='relative flex items-start space-x-4'>
+            <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}} className='relative flex items-start space-x-4'>
                 <div className='flex flex-col ml-[90px]'>
                     <div className='relative mb-[17px]'>
                     <div className='absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[21px]'></div>
@@ -69,7 +72,8 @@ export default function AnimeDetails(){
                     </div>
                     {episodes}
                 </div>
-            </div>
-            </div>
+            </motion.div>
+        </div>
+        </>
     )
 }
