@@ -28,16 +28,16 @@ export default function ThrowbackDetails(){
         <>
         <Hero />
         <div className='relative font-[Outfit] w-full bg-[#1A1A1A]'>
-            <NavLink to='/' className='inline-block mt-14 ml-[89px] mb-[26px]'>
+            <NavLink to='/' className='inline-block mt-14 ml-5 lg:ml-[89px] mb-[26px]'>
                 <motion.button whileHover={{scale:0.9}} className='text-white font-bold text-[34px] leading-[43px]'>
                     Throwback Anime!
                 </motion.button>
             </NavLink>
-            <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}} className='relative flex items-start space-x-4'>
-                <div className='flex flex-col ml-[90px]'>
+            <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.5}} className='relative block xl:flex items-start space-x-4 overflow-hidden'>
+                <div className='flex flex-col mx-5 lg:ml-[90px]'>
                     <div className='relative mb-[17px]'>
                     <div className='absolute top-0 w-full h-full bg-gradient-to-b from-transparent to-black rounded-[21px]'></div>
-                        <img src={`../ThrowPoster/${throwback.poster}`} alt='zoom aot' className='w-full h-[621px] object-cover object-center rounded-[21px]'/>
+                        <img src={`../ThrowPoster/${throwback.poster}`} alt='zoom aot' className='w-full h-[400px] sm:h-[621px] object-cover object-center rounded-[21px]'/>
                         <div className='flex flex-col absolute bottom-10 mt-[533px] pl-[33px] w-full'>
                             <h1 className='font-[Outfit] font-medium text-2xl text-white'>
                                 {throwback.title}
@@ -55,13 +55,13 @@ export default function ThrowbackDetails(){
                             </div>
                         </div>
                     </div>
-                    <p className='w-[512px] pb-5 font-[Outfit] font-normal text-xl text-[#747474]'>
+                    <p className='w-full lg:w-[512px] pb-5 font-[Outfit] font-normal text-xl text-[#747474]'>
                         When man-eating Titans first appeared 100 years ago, humans found safety behind massive walls that stopped the 
                         giants in their tracks. But the safety they have had for so long is threatened when a colossal Titan smashes through 
                         the barriers, causing a flood of the giants into what had been the human…
                     </p>
                 </div>
-                <div className='relative flex flex-col pr-[90px]'>
+                <div className='relative flex flex-col px-5 lg:pr-[90px]'>
                     <div className='flex items-center justify-between'>
                         <p className='font-[Outfit] font-medium text-2xl text-white'>
                             Episodes
