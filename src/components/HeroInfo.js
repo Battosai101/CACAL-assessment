@@ -9,7 +9,7 @@ import {motion} from 'framer-motion'
 export default function HeroInfo(props){
     return(
         <motion.div initial={{opacity:0}} animate={{opacity:1}} transition={{delay:0.5, duration:0.5}} className="absolute top-[345px] text-white pl-[84px] pr-[90px] bottom-0 w-full z-20 overflow-hidden">
-            <h1 className="font-[Outfit] font-bold text-[80px] max-w-[622px]">{props.title}</h1>
+            <h1 className="font-[Outfit] font-bold text-[50px] sm:font-bold sm:text-[80px] max-w-[622px]">{props.title}</h1>
             <div className="flex items-center max-w-[622px]">
                 <img src={star} alt="star icon"/>
                 <p className='font-[Outfit] pl-1 pr-5 text-xs font-semibold'>{props.rate}</p>
@@ -25,7 +25,7 @@ export default function HeroInfo(props){
                 <motion.button whileHover={{scale:0.9}} className='border-[1px] border-white rounded-md'><img className='p-3 hover:bg-[#106580]'src={heart} alt="heart icon" />
                 </motion.button>
             </div>
-            <div className='mt-60 text-white flex items-center justify-between'>
+            <div className='mt-20 sm:mt-60 text-white flex items-center justify-between flex-wrap'>
                 <div className='flex justify-start font-[Outfit] text-sm space-x-7'>
                     <NavLink to='/'>
                         <p className='font-thin hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
