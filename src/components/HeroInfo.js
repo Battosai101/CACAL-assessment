@@ -25,7 +25,7 @@ export default function HeroInfo(props){
                 <motion.button whileHover={{scale:0.9}} className='border-[1px] border-white rounded-md'><img className='p-3 hover:bg-[#106580]'src={heart} alt="heart icon" />
                 </motion.button>
             </div>
-            <div className='mt-5 sm:mt-60 text-white flex items-center justify-between flex-wrap'>
+            <div className='mt-8 sm:mt-60 text-white flex items-center justify-between flex-wrap'>
                 <div className='flex justify-start font-[Outfit] text-sm space-x-7'>
                     <NavLink to='/'>
                         <p className='font-thin hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
