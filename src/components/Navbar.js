@@ -8,29 +8,29 @@ export default function Navbar(){
                     AnimeBinge
                 </motion.h1>
             </NavLink>
-            <div className='font-[Montserrat] text-white font-normal text-base items-center mt-2 sm:mt-[81px] shrink-0'>
+            <div className='font-[Montserrat] text-white font-normal text-base mt-2 sm:mt-[81px]'>
                 <NavLink to='/' className='mr-[53px]'>
-                    <button className='hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
+                    <button className='mb-2 sm:mb-0 hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                         Home
                     </button>
                 </NavLink>
                 <NavLink to='/discover' className='mr-[58px]'>
-                    <button className='hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
+                    <button className='mb-2 sm:mb-0 hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                         Discover
                     </button>
                 </NavLink>
                 <NavLink to='/aboutus' className='mr-[49px]'>
-                    <button className='hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
+                    <button className='mb-2 sm:mb-0 hover:font-bold hover:underline hover:decoration-4 hover:decoration-[#106580] hover:underline-offset-8'>
                         About Us
                     </button>
                 </NavLink>
                 <NavLink to='/signup' className='mr-[21px]'>
-                    <button className='px-7 py-3 border-[1px] border-white rounded-md hover:bg-[#106580]'>
+                    <button className='mb-2 sm:mb-0 px-7 py-3 border-[1px] border-white rounded-md hover:bg-[#106580]'>
                         Sign Up
                     </button>
                 </NavLink>
                 <NavLink to='/login'>
-                    <button className='px-8 py-3 rounded-md bg-[#106580] hover:bg-white hover:text-[#106580]'>
+                    <button className='mb-2 sm:mb-0 px-8 py-3 rounded-md bg-[#106580] hover:bg-white hover:text-[#106580]'>
                         Log In
                     </button>
                 </NavLink>
